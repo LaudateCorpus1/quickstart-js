@@ -99,7 +99,7 @@ limitations under the License.
     showToken('loading...');
     // Get registration token. Initially this makes a network call, once retrieved
     // subsequent calls to getToken will return from cache.
-    messaging.getToken({vapidKey: '<YOUR_PUBLIC_VAPID_KEY_HERE>'}).then((currentToken) => {
+    messaging.getToken({vapidKey: 'a9882125cf7618121aac8423e2791575f5421eab'}).then((currentToken) => {
       if (currentToken) {
         sendTokenToServer(currentToken);
         updateUIForPushEnabled(currentToken);
